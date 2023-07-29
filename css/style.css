@@ -1,0 +1,126 @@
+html {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+body {
+  background-image: url(../images/background.png);
+  background-size: cover;
+  height: 100vh;
+  color: #ffff;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.mensagem-principal {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.mensagem-principal h1 {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 300px;
+}
+
+.mensagem-principal p {
+  font-weight: 300;
+  width: 300px;
+  margin-top: 11px;
+}
+
+.formulario-area {
+  margin-left: 100px;
+}
+
+.formulario-area .formulario {
+  background-color: #fff;
+  width: 340px;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.formulario-area .formulario input {
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+  border: solid #000 1px;
+  margin: 10px 0px;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+.formulario-area .formulario .campo.campo-preenchido{
+    border: solid #3ccc87 2px;
+}
+
+.formulario-area .formulario .campo.campo-vazio {
+  border: solid #f52e2e 1px;
+}
+
+.formulario-area .formulario textarea {
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+  border: solid #000 1px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.formulario-area .formulario .obrigatorio {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+  right: 3%;
+  margin-top: 6px;
+}
+
+.formulario-area .formulario .msg-aviso {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 9px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f52e2e;
+  position: relative;
+  left: 3%;
+}
+
+.esconder {
+  display: none;
+}
+
+.formulario-area .formulario .submit {
+  background-color: #3ccc87;
+  border: none;
+  color: white;
+  margin-top: 25px;
+  cursor: pointer;
+}
