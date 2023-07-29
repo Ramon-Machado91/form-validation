@@ -11,40 +11,19 @@ camposAPreencher.forEach((item) => {
   });
 });
 
-function avisar(index){
+function avisar(index) {
   avisos[index].classList.remove("esconder");
   camposAPreencher[index].classList.add("campo-vazio");
 }
 
-function esconder(index){
+function esconder(index) {
   avisos[index].classList.add("esconder");
   camposAPreencher[index].classList.remove("campo-vazio");
 }
 
 function validar() {
-  if (camposAPreencher[0].value === "") {
-    avisar(0)
-  } else {
-   esconder(0)
-  }
-
-  if (camposAPreencher[1].value === "") {
-    avisar(1)
-  } else {
-   esconder(1)
-  }
-
-  if (camposAPreencher[2].value === "") {
-    avisar(2)
-  } else {
-   esconder(2)
-  }
-
-  if (camposAPreencher[3].value === "") {
-    avisar(3)
-  } else {
-   esconder(3)
-  }
+  camposAPreencher[0].value === ""? avisar(0):esconder(0);
+  camposAPreencher[1].value === ""? avisar(1):esconder(1);
+  camposAPreencher[2].value === ""? avisar(2):esconder(2);
+  camposAPreencher[3].value === ""? avisar(3):esconder(3);
 }
-
-
